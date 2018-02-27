@@ -1,3 +1,7 @@
+*{
+    visibility: hidden;
+}
+
 #gateInnerContent{
     margin-top: 350px;
 }
