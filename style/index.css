@@ -1,3 +1,35 @@
-li{
-    font-size: 20px;
+#border-top, #border-right, #border-bottom, #border-left{
+    background-color: #010101;
+    position: fixed;
+    }
+    #border-top, #border-bottom{
+        left: 0;
+        right: 0;
+        height: 10px;
+        }
+        #border-top{top: 0;}
+        #border-bottom{bottom: 0;}
+    #border-left, #border-right{
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        }
+        #border-left{left: 0;}
+        #border-right{right: 0;}
+
+.navbar-custom{
+    background-color: #010101;
+}
+
+.nav-link-custom{
+    padding: 0px 10px 0 30px;
+    color: grey;
+}
+
+.nav-link-custom:hover{
+    color: white;
+}
+
+.inner-content{
+    position: absolute;
 }

@@ -4,23 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome</title>
+    <title></title>
+
+    <link rel="stylesheet" href="dependencies/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <link rel="stylesheet" type="text/css" href="homepage/style/homepage.css">
     <link rel="stylesheet" type="text/css" href="cemeteryMap/style/cemeteryMap.css">
+    <link rel="stylesheet" type="text/css" href="about/style/about.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><p>LOGO</p></li>
+    <div id="border-top"></div>
+    <div id="border-right"></div>
+    <div id="border-bottom"></div>
+    <div id="border-left"></div>
+
+    <nav class="navbar navbar-custom">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" id="navGate" href="#">BEIT HAIM</a>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" id="navMap" href="#">CEMETERY MAP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" id="navShop" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" id="navAbout" href="#">ABOUT THE PROJECT</a>
+            </li>
         </ul>
     </nav>
-    <div id="mainDiv">
+
+    <div class="container" id="mainDiv">
         
     </div>
 
-    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+    <script src="dependencies/jquery-3.3.1.min.js"></script>
+    <script src="dependencies/popper.min.js"></script>
+    <script src="dependencies/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="script/index.js"></script>
 </body>
 </html>

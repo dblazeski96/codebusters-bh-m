@@ -1,4 +1,14 @@
-#myP{
-    color: red;
-    font-size: 30px;
+#gotoGate{
+    margin-top: 550px;
+    margin-left: 600px;
+}
+
+#gotoStories{
+    margin-top: 250px;
+    margin-left: -150px;
+}
+
+#gotoArtifacts{
+    margin-top: 500px;
+    margin-left: -500px;
 }
