@@ -1,7 +1,7 @@
-.gate-inner-content-vertical-offset{
+#gateInnerContent{
     margin-top: 350px;
 }
 
-p{
+#gateInfo{
     color: white;
 }

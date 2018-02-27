@@ -17,6 +17,10 @@
         #border-left{left: 0;}
         #border-right{right: 0;}
 
+body{
+    overflow: hidden;
+}
+
 .navbar-custom{
     background-color: #010101;
 }
