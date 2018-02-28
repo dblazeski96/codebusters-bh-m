@@ -3,21 +3,24 @@ $(document).ready(() => {
     $("#navMap").on("click", loadMap);
     $("#navAbout").on("click", loadAbout);
 
-    loadGate();
     $("nav").hide();
+    loadGate();
 });
 
 function loadGate(){
     $("#mainDiv").empty()
-        .load("homepage/homepage.html");
+        .load("homepage/homepage.html")
+            .hide();
 }
 
 function loadMap(){
     $("#mainDiv").empty()
         .load("cemeteryMap/cemeteryMap.html");
+    $("nav, #mainDiv").hide();
 }
 
 function loadAbout(){
     $("#mainDiv").empty()
         .load("about/about.html");
+    $("nav, #mainDiv").hide();
 }
