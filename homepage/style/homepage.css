@@ -2,7 +2,7 @@
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     text-shadow: 0px 0px 10px #888888;
 }
 #gateInfo:hover{
@@ -11,19 +11,19 @@
 }
 
 #gateEnter{
-    margin-top: 20px;
-    padding: 18px 90px;
-    border: 3px solid grey;
+    margin-top: 10px;
+    padding: 12px 60px;
+    border: 1px solid grey;
     border-radius: 7px;
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     box-shadow: 0px 0px 50px 0px #202020;
 }
 
 #gateEnter:hover{
-    border: 3px solid white;
+    border: 1px solid white;
     text-shadow: 0px 0px 30px #999999;
     box-shadow: 0px 0px 50px 5px #303030;
     cursor: pointer;
