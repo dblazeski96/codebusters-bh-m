@@ -1,0 +1,16 @@
+#mapImg{
+    box-shadow: 0px 0px 50px 50px black;
+}
+
+#gotoGate, #gotoStories, #gotoArtifacts{
+    box-shadow: 0px 0px 30px 5px black;
+}
+
+#gotoGate:hover, #gotoStories:hover, #gotoArtifacts:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#mapImg, #gotoGate, #gotoStories, #gotoArtifacts{
+    display: none;
+}
