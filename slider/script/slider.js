@@ -17,20 +17,28 @@ $(document).ready(() => {
         }]
     });
 
+    $(window).on("resize", () => {
+        updateSliderDesc();
+    });
+
     $("body").css({
         "background-image": "url(../common/img/bg.png)"
     });
 
-    $(window).on("resize", () => {
-        updateSlider();
-    });
-
     $("nav, nav *").show("blind", {direction: "up"}, animsDuration);
-    updateSlider();
+
+    updateSliderDesc();
+
+    $("#explore").on("click", () => {
+        alert("dsa");
+    })
 });
 
-function updateSlider(){
-    // $(".slick-slide, .slick-slide.slick-center").css({
-    //     "margin-top": `${(window.innerHeight - $(".img-box img").height()) * 0.5}px`
-    // });
+function updateSliderDesc(){
+    $("#sliderDesc").css({
+        "margin-top": `${window.innerHeight * 0.5}px`
+    });
+    $("#sliderExplore").css({
+        "margin-top": `${window.innerHeight * 0.75}px`
+    });
 }

@@ -1,3 +1,34 @@
+#sliderDesc{
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    pointer-events: none;
+}
+
+#sliderExplore{
+    position: fixed;
+    z-index: 1000;
+    color: white;
+}
+
+#exploreBtn{
+    margin-top: 10px;
+    padding: 12px 60px;
+    border: 1px solid grey;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 0px 50px 0px #202020;
+}
+
+#exploreBtn:hover{
+    border: 1px solid white;
+    text-shadow: 0px 0px 30px #999999;
+    box-shadow: 0px 0px 50px 5px #303030;
+    cursor: pointer;
+}
+
 .slick-slide {
     transform: scale(1);
     transition: 0.3s ease-in-out all;
