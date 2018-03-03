@@ -34,6 +34,25 @@ $(document).ready(() => {
     $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         if(myCurrentSlide !== nextSlide){
             $("#sliderDesc, #sliderExplore").hide("fade", animsDuration, () => {
+                switch(myCurrentSlide){
+                    case 0:{
+                        $("#sliderDesc h1").text("STORY 00");
+                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                    }
+                        break;
+                    case 1:{
+                        $("#sliderDesc h1").text("STORY 01");
+                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                    }
+                        break;
+                    case 2:{
+                        $("#sliderDesc h1").text("STORY 02");
+                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                    }
+                        break;
+                    default:
+                        break;
+                }
                 $("#sliderDesc, #sliderExplore").show("fade", animsDuration);
             })
         }
@@ -60,9 +79,7 @@ $(document).ready(() => {
             default:
                 break;
         }
-    })
-
-    
+    });
 });
 
 function updateSliderDesc(){
