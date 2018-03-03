@@ -39,6 +39,6 @@ function updateSliderDesc(){
         "margin-top": `${window.innerHeight * 0.5}px`
     });
     $("#sliderExplore").css({
-        "margin-top": `${parseInt($("#sliderDesc").css("margin-top").slice(0, -2)) + (window.innerHeight * 0.2)}px`
+        "margin-top": `${parseInt($("#sliderDesc").css("margin-top").slice(0, -2)) + 150}px`
     });
 }
