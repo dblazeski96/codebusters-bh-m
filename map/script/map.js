@@ -51,7 +51,7 @@ function updateGotos(doAnims){
     });
     $("#gotoImg2").css({
         "margin-top": $("#mainDiv").height() * 0.6,
-        "margin-left": $("#mainDiv").width() * -0.5
+        "margin-left": $("#mainDiv").width() * -0.2
     });
     if(doAnims){
         $("#gotoGate").show("fade", animsDuration);
