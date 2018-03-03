@@ -9,6 +9,9 @@ let ProductTitle = 0;
 
 $(function () {
     localStorage.clear();
+
+    $("nav, nav *").show("blind", { direction: "up" }, 800);
+
     $('#priceCard').css({
         'left': `${window.innerWidth - 384}px`
     })
