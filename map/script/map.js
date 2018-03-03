@@ -1,4 +1,3 @@
-let allItemsCM = $("#mapImg, #gotoGate, #gotoArtifacts, #gotoStories");
 let animsDuration = 800;
 let imgs = 2;
 
@@ -14,7 +13,7 @@ $(document).ready(() => {
     $("#mapImg").show("fade", animsDuration);
     updateGotos(true);
 
-    $("#popupImg").on("click", () => {
+    $("#popupImg, #popupDiv, #dimDiv").on("click", () => {
         $("#popupDiv, #dimDiv").hide("fade", animsDuration);
     });
 

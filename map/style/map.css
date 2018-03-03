@@ -15,7 +15,7 @@
 
 #popupDiv{
     position: fixed;
-    z-index: 999;
+    z-index: 899;
 }
 
 #popupImg{
@@ -25,10 +25,6 @@
 #mapImg{
     box-shadow: 0px 0px 50px 10px black;
 }
-
-/* #gotoGate:hover, #gotoImg1:hover, #gotoImg2:hover{
-    cursor: pointer;
-} */
 
 #dimDiv ,#popupDiv, #mapImg, #gotoGate, #gotoImg1, #gotoImg2{
     display: none;
