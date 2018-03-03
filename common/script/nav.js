@@ -39,3 +39,9 @@ $("#navStories").on("click", () => {
         document.location.href = "../slider/slider.html";
     });
 });
+
+$("#navShop").on("click", () => {
+    $("nav, nav *").hide("blind", {direction: "up"}, animsDuration, () => {
+        document.location.href = "../shop/shop.html";
+    });
+});
