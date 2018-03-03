@@ -9,10 +9,12 @@ body {
 
 #videoTextDiv {
 	position: absolute;
+	
 }
 
+
 #videoTextDiv > a {
-	font-family: 'Noto Serif', serif;
+	font-family: 'Frank Ruhl Libre', serif;
 	color: white;
 	font-size: 50px;
 	text-align: center;
@@ -32,15 +34,15 @@ body {
 }
 
 #storyContent > p {
-	font-family: 'Noto Serif', serif;
-	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 	color: white;
 	text-align: justify;
 }
 
 #storyContent > h2 {
-	font-family: 'Noto Serif', serif;
-	font-size: 30px;
+	font-family: 'Frank Ruhl Libre', serif;
+	font-size: 28px;
 	color: gray;
 }
 

@@ -9,13 +9,13 @@ $(document).ready(() => {
 
     $(window).on("resize", () => {
         updateTitle();
-        $("#videoTextDiv h1").css("font-size", `${(window.innerHeight + window.innerWidth) * 0.014}px`);
     });
     updateTitle();
 });
 
 function updateTitle() {
     $("#videoTextDiv").css({
-        "top": `${$("#videoDiv").height() * 0.75}px`
+        "top": `${$("#videoDiv").height() * 0.55}px`
     });
+    $("#videoTextDiv a").css("font-size", `${(window.innerHeight + window.innerWidth) * 0.02}px`);
 }
