@@ -1,4 +1,5 @@
 let animsDuration = 800;
+let myCurrentSlide = 0;
 
 $(document).ready(() => {
 
@@ -26,12 +27,42 @@ $(document).ready(() => {
     });
 
     $("nav, nav *").show("blind", {direction: "up"}, animsDuration);
-
     updateSliderDesc();
 
+    $("#sliderDesc, #sliderExplore").show("fade", animsDuration);
+    
+    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        if(myCurrentSlide !== nextSlide){
+            $("#sliderDesc, #sliderExplore").hide("fade", animsDuration, () => {
+                $("#sliderDesc, #sliderExplore").show("fade", animsDuration);
+            })
+        }
+    });
+
+    $('.slider').on('afterChange', function (event, slick, currentSlide) {
+        myCurrentSlide = currentSlide;
+    });
+
     $("#exploreBtn").on("click", () => {
-        alert("dsa");
+        switch(myCurrentSlide){
+            case 0:{
+                redirectToStory("story00");
+            }
+                break;
+            case 1:{
+                redirectToStory("story01");
+            }
+                break;
+            case 2:{
+                redirectToStory("story02");
+            }
+                break;
+            default:
+                break;
+        }
     })
+
+    
 });
 
 function updateSliderDesc(){
@@ -40,5 +71,13 @@ function updateSliderDesc(){
     });
     $("#sliderExplore").css({
         "margin-top": `${parseInt($("#sliderDesc").css("margin-top").slice(0, -2)) + 150}px`
+    });
+}
+
+function redirectToStory(story){
+    $("#sliderDesc, #sliderExplore").hide("fade", animsDuration, () => {
+        $("#mainDiv").hide("fade", animsDuration, () => {
+            document.location.href = `../stories/${story}/${story}.html`;
+        });
     });
 }

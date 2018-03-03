@@ -14,7 +14,7 @@ $(document).ready(() => {
                     $("#gateEnter, #gateInfo").hide("fade", animsDuration, () => {
                         $("#gateImg").removeClass("img-fluid")
                                         .hide("puff", {percent: 1500}, 3000, () => {
-                            document.location.href = "../map/map.html";
+                            document.location.href = "../slider/slider.html";
                         });
                     });
                 });
