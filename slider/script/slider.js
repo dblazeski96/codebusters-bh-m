@@ -1,5 +1,6 @@
 let animsDuration = 800;
 let myCurrentSlide = 0;
+let storiesCount = 4;
 
 $(document).ready(() => {
 
@@ -36,25 +37,29 @@ $(document).ready(() => {
             $("#sliderDesc, #sliderExplore").hide("fade", animsDuration, () => {
                 switch(myCurrentSlide){
                     case 0:{
-                        $("#sliderDesc h1").text("STORY 00");
-                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                        $("#sliderDesc h1").text("TOWER OF SEPHARDIC FACES");
+                        $("#sliderDesc p").text("Between 1941 and 1944, Bulgaria, in alliance with Nazi Germany, occupied the Yugoslav province of Macedonia. On March 11, 1943, in cooperation with the Germans...");
                     }
                         break;
                     case 1:{
-                        $("#sliderDesc h1").text("STORY 01");
-                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
-                    }
-                        break;
-                    case 2:{
                         $("#sliderDesc h1").text("STORY 02");
                         $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
                     }
                         break;
+                    case 2:{
+                        $("#sliderDesc h1").text("STORY 03");
+                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                    }
+                        break;
+                    case 3:{
+                        $("#sliderDesc h1").text("STORY 04");
+                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                    }
                     default:
                         break;
                 }
                 $("#sliderDesc, #sliderExplore").show("fade", animsDuration);
-            })
+            });
         }
     });
 
@@ -63,21 +68,10 @@ $(document).ready(() => {
     });
 
     $("#exploreBtn").on("click", () => {
-        switch(myCurrentSlide){
-            case 0:{
-                redirectToStory("story00");
+        for(let n = 0; n < storiesCount; n += 1){
+            if(n === myCurrentSlide){
+                redirectToStory(`story0${n + 1}`);
             }
-                break;
-            case 1:{
-                redirectToStory("story01");
-            }
-                break;
-            case 2:{
-                redirectToStory("story02");
-            }
-                break;
-            default:
-                break;
         }
     });
 });
@@ -87,7 +81,7 @@ function updateSliderDesc(){
         "margin-top": `${window.innerHeight * 0.5}px`
     });
     $("#sliderExplore").css({
-        "margin-top": `${parseInt($("#sliderDesc").css("margin-top").slice(0, -2)) + 150}px`
+        "margin-top": `${parseInt($("#sliderDesc").css("margin-top").slice(0, -2)) + 200}px`
     });
 }
 
