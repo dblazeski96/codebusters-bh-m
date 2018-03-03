@@ -1,0 +1,49 @@
+
+.modal-content{
+    background-color: white;
+    color:rgb(35, 35, 35);
+    
+}
+.modal-dialog-centered{
+    width: 600px;
+}
+.btn-group{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#addToCart{
+    margin-right: 35%;
+    
+}
+#productDescription{
+    font-size: 15px;
+} 
+#quantityStyle{
+    padding-left: 40px;
+    font-weight: bold;
+}
+#priceCard{
+    position: fixed;
+    top:15%;
+    left: 72vw;
+   /* opacity: 0.5; */
+}
+.card-body{
+    max-height: 400px;
+    overflow: auto;
+    /* overflow-x: hidden; */
+}
+#proceedoCheckout{
+    margin-left: 95px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.price{
+    font-weight: bold;
+}
+.quantity{
+    padding-left: 180px;
+    font-weight: bold;
+}
+

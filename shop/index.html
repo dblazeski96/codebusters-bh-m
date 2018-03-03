@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Minishop</title>
+  <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/thumbnail-gallery.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+</head>
+
+<body>
+
+
+  
+  <button type="button" id="bringBackCart"class="btn btn-dark" style=" margin-top: 5px; float:right; display: none">Show Cart</button>
+  <!-- Page Content -->
+  <div class="container" >
+
+    <h1 class="my-4 text-center text-lg-left">Shop</h1>
+
+    <div class="row text-center text-lg-left">
+
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail a" src="pictures/1.png" alt="" >
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail b" src="pictures/2.png" alt="" >
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail c" src="pictures/3.png" alt="" >
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail d" src="pictures/4.png" alt="" >
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail e" src="pictures/5.jpg" alt="" >
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail f" src="pictures/6.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail g" src="pictures/7.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail h" src="pictures/8.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail i" src="pictures/9.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail j" src="pictures/10.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100 k">
+          <img class="img-fluid img-thumbnail" src="pictures/11.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100 m">
+          <img class="img-fluid img-thumbnail" src="pictures/12.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="card" id="priceCard" style="width: 24rem; display:none">
+      <div class="card-body">
+        <h5 class="card-title">My Cart
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span id="closeButtonCart" aria-hidden="true">&times;</span>
+          </button>
+        </h5>
+        <hr>
+        <p class="card-text box3" >
+        <!-- <h6 class="card-subtitle mb-2 text-muted" ><span id="cardTytle"></span></h6> -->
+        </p>
+        <p class="card-text box2" >
+           <!-- <span class="price">Price: 30$</span> <span class="quantity">Quanitity:1</span>  -->
+        </p>
+        <hr>
+        
+      </div>
+      <div><p class="card-text" id="#total-price" style="margin: 20px;">
+        Total Price :</span> <span class="totalPrice"></span> 
+     </p></div>
+        <button type="button" id="proceedoCheckout" class="btn btn-outline-dark">Buy</button>
+      
+    </div>
+  
+
+  </div>
+
+
+
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <h5 class="modal-title" id="ProductTitle"><span id="Product"></span></h5>
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="span6">
+                <div class="logowrapper">
+                    <img class="logoicon" src="" alt="App Logo" style="width:200px; height:225px"/>
+                    <div class="span6"style="float:right">
+                      <div class="form-horizontal" style="float:right">
+                       <h5> Price: <span class="help-block" id="newPrice"></span>$</h5>
+                          <div id="productDescription" style="width: 250px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, quidem impedit reprehenderit dicta nam obcaecati rem ratione quae perferendis consequuntur, dolore facilis voluptatum, dolores dolorum repellat. Tempore culpa voluptatum ratione.</div>
+                          <div>
+                          <span id="quantityStyle">Quantity:</span>
+                           <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary" id="newPlus">+</button>
+                            <button type="button" class="btn btn-secondary" id="newQuantity" disabled style="background-color:black;"><span id="quantiy">1</span></button>
+                            <button type="button" id="newMinus" class="btn btn-secondary">-</button>
+                          </div>
+                          </div>
+                            
+                          
+                        </div>
+                  </div>
+                  </div>
+                
+                </div>
+               
+            </div>
+        </div>
+    </div>
+      <div class="modal-footer" style="border: none;">
+        
+        <button type="button" id="addToCart" data-dismiss="modal" class="btn btn-outline-dark">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+  <script src="../common/script/nav.js"></script>
+  <script src="js/jqscript.js"></script>
+
+</body>
+
+</html>

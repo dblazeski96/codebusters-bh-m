@@ -42,8 +42,8 @@ $(document).ready(() => {
                     }
                         break;
                     case 1:{
-                        $("#sliderDesc h1").text("STORY 02");
-                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                        $("#sliderDesc h1").text("MONASTIR JEWRY");
+                        $("#sliderDesc p").text("On October 4, 1941, the Bulgarians enforced an extraordinary measure that prohibited the Jews of Macedonia from engaging in any type of industry or commerce. All existing Jewish businesses had three months...");
                     }
                         break;
                     case 2:{
@@ -88,7 +88,7 @@ function updateSliderDesc(){
 function redirectToStory(story){
     $("#sliderDesc, #sliderExplore").hide("fade", animsDuration, () => {
         $("#mainDiv").hide("fade", animsDuration, () => {
-            document.location.href = `../stories/${story}/${story}.html`;
+            document.location.href = `../stories/${story}.html`;
         });
     });
 }
