@@ -5,7 +5,7 @@ $(document).ready(() => {
     <nav class="navbar navbar-custom">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link nav-link-custom" id="navGate" href="#">BEIT HAIM</a>
+                <a class="nav-link nav-link-custom" id="navGate" href="#">APP NAME</a>
             </li>
         </ul>
         <ul class="nav">
@@ -13,10 +13,10 @@ $(document).ready(() => {
                 <a class="nav-link nav-link-custom" id="navStories" href="#">STORIES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-custom" id="navTimeline" href="#">TIMELINE</a>
+                <a class="nav-link nav-link-custom" id="navForum" href="#">FORUM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-custom" id="navForum" href="#">FORUM</a>
+                <a class="nav-link nav-link-custom" id="navAbout" href="#">ABOUT</a>
             </li>
         </ul>
     </nav>
@@ -34,15 +34,15 @@ $(document).ready(() => {
         });
     });
     
-    $("#navTimeline").on("click", () => {
-        $("nav, nav *").hide("blind", {direction: "up"}, navAnimsDuration, () => {
-            document.location.href = "../timeline/timeline.html";
-        });
-    });
-    
     $("#navForum").on("click", () => {
         $("nav, nav *").hide("blind", {direction: "up"}, navAnimsDuration, () => {
             document.location.href = "../forum/forum.html";
+        });
+    });
+
+    $("#navAbout").on("click", () => {
+        $("nav, nav *").hide("blind", {direction: "up"}, navAnimsDuration, () => {
+            document.location.href = "../about/about.html";
         });
     });
 });

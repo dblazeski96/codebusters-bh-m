@@ -1,0 +1,383 @@
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	overflow: auto;
+}
+
+/* Side Menu */
+#sideMenu {
+	position: fixed;
+	top: 62px;
+	width: 270px;
+	height: auto;
+	box-shadow: 0px 0px 50px 10px black;
+	left: 1vw;
+	z-index: 999;
+}
+
+.sideSectionHeader {
+	background-color: rgba(0, 0, 0, 1);
+	width: 98%;
+	height: 26px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 50px 10px black;
+	border-radius: 3px;
+	margin-left: 2px;
+	margin-top: 5px;
+}
+
+#sec {
+	margin-left: 7px;
+}
+
+#sideMenu > ul {
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#sideMenu li {
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 50px 10px black;
+	padding-left: 4px;
+	width: 96%;
+	margin-left: 5px;
+}
+
+#sideMenu a {
+	color: white;
+}
+
+#sideMenu a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+#showHide {
+	margin-left: 170px;
+}
+
+#sideMenuClose {
+	position: fixed;
+	top: 650px;
+	width: 50px;
+	height: auto;
+	box-shadow: 0px 0px 50px 10px black;
+}
+
+#insideSideMenuClose {
+	margin-right: 5px;
+}
+
+
+/* Pagination */
+.pagination ul {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pagination li {
+	list-style: none;
+	float: left;
+	width: 24px;
+	height: 24px;
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+	margin-right: 4px;
+	text-align: center;
+	border-radius: 2px;
+	padding: 0px;
+}
+
+.pagination li:hover {
+	background-color: white;
+	border-color: 1px solid black;
+	color: black;
+}
+
+.active-class {
+	background-color: white !important;
+	border-color: 1px solid black !important;
+	color: black !important;
+}
+
+#nextButton {
+	list-style: none;
+	width: 45px;
+	height: 24px;
+	border: 1px solid white;
+	color: black;
+	cursor: pointer;
+	margin-right: 4px;
+	text-align: center;
+	border-radius: 2px;
+	padding: 0px;
+	background-color: white;
+}
+
+#nextButton:hover {
+	background-color: black;
+	border-color: 1px solid black;
+	color: white;
+}
+
+#previousButton {
+	list-style: none;
+	width: 68px;
+	height: 24px;
+	border: 1px solid white;
+	color: black;
+	cursor: pointer;
+	margin-right: 4px;
+	text-align: center;
+	border-radius: 2px;
+	padding: 0px;
+	background-color: white;
+}
+
+#previousButton:hover {
+	background-color: black;
+	border-color: 1px solid black;
+	color: white;
+}
+
+#pagingBar {
+	display: inline-block;
+}
+
+.pagination {
+	position: relative;
+	float: left;
+	margin-left: 1px;
+
+}
+
+#postNewSearch {
+	position: absolute;
+	display: inline-block;
+	right: 15px;
+}
+
+#postNew {
+	list-style: none;
+	width: 77px;
+	height: 24px;
+	border: 1px solid white;
+	color: black;
+	cursor: pointer;
+	margin-right: 4px;
+	text-align: center;
+	border-radius: 2px;
+	padding: 0px;
+	background-color: white;
+}
+
+#searchBar {
+	height: 25.3px;
+	border-radius: 2px;
+}
+
+/* Mian Cointent */
+#storyContent {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 50px 10px black;
+	padding: 13px;
+	height: 100%;
+}
+
+#forumHeader {
+	background-color: rgba(0, 0, 0, 1);
+	width: 100%;
+	height: 26px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 50px 10px black;
+	border-radius: 3px;
+}
+
+#forumHeader > a {
+	color: white;
+	text-decoration: none;
+}
+
+.sectionHeader {
+	background-color: rgba(0, 0, 0, 1);
+	width: 100%;
+	height: 36px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 50px 10px black;
+	border-radius: 3px;
+	padding-top: 4px;
+}
+
+.sectionHeader > a {
+	color: white;
+	text-decoration: none; 
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.threds {
+	position: relative;
+	border: 2px solid black;
+	width: 100vw;
+	height: 90px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 50px 10px black;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.threds p {
+	color: white;
+}
+
+.threds:hover {
+	background-color: rgba(225, 225, 225, 0.04);
+}
+
+#title {
+	position: relative;
+	float: left;
+	margin-left: 110px;
+}
+
+#sdate {
+	position: relative;
+	float: right;
+	margin-right: 35px;
+}
+
+#reps {
+	position: relative;
+	float: right;
+	margin-right: 35px;
+}
+
+#views {
+	position: relative;
+	float: right;
+	margin-right: 45px;
+}
+
+#lmessage {
+	position: relative;
+	float: right;
+	margin-right: 45px;
+}
+
+/* Img Holder Start */
+#storyContent img {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	border: 0px solid black;
+}
+
+.imgHolder {
+	margin-top: 15px;
+	margin-left: 18px;
+	position: relative;
+	float: left;
+	width: 56px;
+	height: 56px;
+}
+/* Img Holder End */
+
+.titleContent {
+	position: absolute;
+	left: 3vw;
+	width: 610px;
+	height: 76px;
+	margin-top: 1.9vh;
+	margin-left: 22px;
+	padding: 10px; 
+}
+
+.titleContent > h5 {
+	font-size: 22px;
+	color: white;
+	margin: 0px;
+	padding-bottom: 0px;
+}
+
+.titleContent > p {
+	font-size: 12px;
+	color: rgb(196, 196, 196);
+	margin: 0px;
+	padding: 0px;
+}
+
+.StartDateContent {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 76px;
+	margin-top: 6px;
+	margin-left: 5px;
+}
+
+.RepliesContent {
+	position: relative;
+	float: left;
+	width: 70px;
+	height: 76px;
+	margin-top: 6px;
+	margin-left: 35px;
+	padding-top: 25px;
+	padding-left: 17px;
+}
+
+.RepliesContent > p {
+	font-size: 15px;
+	color: rgb(196, 196, 196);
+	margin: 0px;
+	padding: 0px;
+	font-weight: 300;
+}
+
+.ViewsContent {
+	position: absolute;
+	right: 6.8vw;
+	width: 70px;
+	height: 76px;
+	margin: 32px 1vw;
+}
+
+.ViewsContent > p {
+	font-size: 15px;
+	color: rgb(196, 196, 196);
+	margin: 0px;
+	padding: 0px;
+	font-weight: 300;
+}
+
+.lastMessageContent {
+	right: 2.4vw;
+	width: 125px;
+	height: 76px;
+	margin: 26px 1vw;
+	/*margin-top: 6px;*/
+	/*padding-top: 15px;*/
+}
+
+.lastMessageContent > p {
+	font-size: 13px;
+	color: rgb(196, 196, 196);
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.threds div {
+	position: absolute;
+}
+
+
+
