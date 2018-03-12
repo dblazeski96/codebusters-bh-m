@@ -5,7 +5,7 @@ $(document).ready(() => {
     <nav class="navbar navbar-custom">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link nav-link-custom" id="navGate" href="#">APP NAME</a>
+                <a class="nav-link nav-link-custom" id="navGate" href="#">PEOPLE OF BEIT HAIM</a>
             </li>
         </ul>
         <ul class="nav">
@@ -13,7 +13,10 @@ $(document).ready(() => {
                 <a class="nav-link nav-link-custom" id="navStories" href="#">STORIES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-custom" id="navForum" href="#">FORUM</a>
+                <a class="nav-link nav-link-custom" id="navForum" href="#">DISCUSSIONS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-custom" id="navShop" href="#">SHOP</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-link-custom" id="navAbout" href="#">ABOUT</a>
@@ -37,6 +40,12 @@ $(document).ready(() => {
     $("#navForum").on("click", () => {
         $("nav, nav *").hide("blind", {direction: "up"}, navAnimsDuration, () => {
             document.location.href = "../forum/forum.html";
+        });
+    });
+
+    $("#navShop").on("click", () => {
+        $("nav, nav *").hide("blind", {direction: "up"}, navAnimsDuration, () => {
+            document.location.href = "../shop/shop.html";
         });
     });
 

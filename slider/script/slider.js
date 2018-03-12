@@ -1,6 +1,6 @@
 let animsDuration = 800;
 let myCurrentSlide = 0;
-let storiesCount = 4;
+let storiesCount = 7;
 
 $(document).ready(() => {
 
@@ -37,23 +37,36 @@ $(document).ready(() => {
             $("#sliderDesc, #sliderExplore").hide("fade", animsDuration, () => {
                 switch(myCurrentSlide){
                     case 0:{
-                        $("#sliderDesc h1").text("EVENT NAME");
-                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa libero eum odit adipisci nihil officia officiis dolorum, cumque autem est quasi, ipsum quod odio reiciendis laboriosam cum. Dolore, ipsum molestias.");
+                        $("#sliderDesc h1").text("DAVID ARUTI");
+                        $("#sliderDesc p").text("Portrait of Jamila Andjela Kolonomos, Victim that survived the Holocaust and lived to 2012.");
                     }
                         break;
                     case 1:{
-                        $("#sliderDesc h1").text("EVENT NAME");
-                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa libero eum odit adipisci nihil officia officiis dolorum, cumque autem est quasi, ipsum quod odio reiciendis laboriosam cum. Dolore, ipsum molestias.");
+                        $("#sliderDesc h1").text("ESTER ESCHKENASI");
+                        $("#sliderDesc p").text("Portrait of David Aruti, son of Isak Aruti. He was a merchant. He lived at Zvornitska 26 in Bitola..");
                     }
-                        break;
+                        break;        
                     case 2:{
-                        $("#sliderDesc h1").text("EVENT NAME");
-                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                        $("#sliderDesc h1").text("JAMILA KOLOMONOS");
+                        $("#sliderDesc p").text("Portrait of Ester Eschkenasi, wife of Sava Eschkenasi. She lived at Karagoryeva 91 in Bitola.");
+                    }
+                        break;    
+                    case 3:{
+                        $("#sliderDesc h1").text("HANA ERGAS");
+                        $("#sliderDesc p").text("Portrait of Hana Ergas, wife of Isak Ergas. She lived at Zmayeva 20 in Bitola.");
                     }
                         break;
-                    case 3:{
-                        $("#sliderDesc h1").text("EVENT NAME");
-                        $("#sliderDesc p").text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus maiores. Aut ad nobis eligendi! Nobis reprehenderit laboriosam odio? Nemo tempore voluptas hic magnam ullam dicta cum fugit, veniam ab?");
+                    case 4:{
+                        $("#sliderDesc h1").text("LAZAR ISCHACH");
+                        $("#sliderDesc p").text("Portrait of Lazar Ischach, son of Yosef Ischach. He was a grocer and lived at Drinska 77 in Bitola.");
+                    }
+                    case 5:{
+                        $("#sliderDesc h1").text("SARA ISCHACH");
+                        $("#sliderDesc p").text("Portrait of Sara Ischach, wife of Lazar Ischach. She lived at Drinksa 77 in Bitola.");
+                    }
+                    case 6:{
+                        $("#sliderDesc h1").text("DAVID PESSO");
+                        $("#sliderDesc p").text("Portrait of David Pesso. He was a dealer of second-hand items. He lived at Novatska 4 in Bitola.");
                     }
                     default:
                         break;

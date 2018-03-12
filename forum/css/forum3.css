@@ -1,0 +1,10 @@
+img{
+    height: 90vh;
+}
+
+p{
+    position: absolute;
+    top: 80vh;
+    color: #fff;
+    font-size: 54px;
+}

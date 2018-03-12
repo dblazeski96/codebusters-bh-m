@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url("../../common/img/bg.png");
+}
+.modal-content{
+    background-color: white;
+    color:rgb(35, 35, 35);
+    
+}
+.container
+{
+    text-align: center;
+}
+.my-4{
+    margin: auto;
+}
+.modal-dialog-centered{
+    width: 600px;
+}
+.btn-group{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#addToCart{
+    margin-right: 35%;
+    
+    
+}
+.h-100{
+    text-align: center;
+}
+.linkDescription, .linkPrice{
+    color: white;
+    margin: auto;
+}
+
+.img-thumbnail{
+    border: none;
+    background-color: rgb(8, 8, 8);
+    box-shadow:  1px 1px 2px rgb(36, 35, 35), 0 0 25px rgb(36, 35, 35), 0 0 5px rgb(36, 35, 35) ;
+    width: 150px;
+    
+}
+
+#donateBtn{
+    position: fixed;
+    left: 1vw;
+    
+}
+#donateBtn img{
+    width: 12vw;
+    
+}
+
+#productDescription{
+    font-size: 15px;
+} 
+
+#CartTotalPrice, .card-body{
+    text-align: center;
+}
+#total-price{
+    margin: auto;
+}
+a:hover{
+    text-decoration: none;
+}
+#quantityStyle{
+    padding-left: 40px;
+    font-weight: bold;
+}
+#priceCard{
+    position: fixed;
+    top:14.5%;
+    left: 72vw;
+    opacity: 0.8; 
+     
+}
+.card-body{
+    max-height: 430px;
+   /* overflow: auto; */
+    /* overflow-x: hidden; */
+}
+.box2{
+    max-height: 330px;
+    overflow: auto; 
+}
+#proceedoCheckout{
+    margin-left: 95px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.price{
+    font-weight: bold;
+}
+.quantity{
+    padding-left: 180px;
+    font-weight: bold;
+}
+

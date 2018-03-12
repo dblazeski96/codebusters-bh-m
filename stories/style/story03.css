@@ -1,0 +1,131 @@
+body{
+    overflow: visible;
+}
+
+#mainDiv{
+    position: relative;
+}
+
+#mainDiv ul{
+    position: absolute;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    left: 50vw;
+    height: 6000px;
+}
+
+#mainLine{
+    position: absolute;
+    height: 100%;
+    border: 0.3vw solid #b7b7b7;
+}
+
+#mainDiv ul li{
+    position: absolute;
+}
+
+.infoDot{
+    position: absolute;
+    height: 1.9vw;
+    width: 1.9vw;
+    left: -10px;
+    border: 0.5vw solid #464646;
+    border-radius: 50%;
+    background-color: #a1a1a1;
+}
+
+.infoLineLeft, .infoLineRight{
+    position: absolute;
+    height: 3px;
+    width: 10vw;
+    top: 12px;
+    background-color: #464646;
+    z-index: -999;
+    display: none;
+}
+
+.infoLineLeft{
+    left: -10vw;
+}
+
+.infoLeft, .infoRight{
+    position: relative;
+    left: 5vw;
+}
+
+#mainDiv div img{
+    position: relative;
+    width: 15vw;
+    box-shadow: 0px 0px 20px 0px black;
+    visibility: hidden;
+}
+
+.infoH2Left, .infoH2Right{
+    position: absolute;
+    text-align: center;
+    max-height: 100%;
+    width: 15vw;
+    color: white;
+    display: none;
+    font-size: 2vw;
+}
+
+.infoPLeft, .infoPRight{
+    position: absolute;
+    text-align: justify;
+    max-height: 100%;
+    width: 15vw;
+    top: 10%;
+    color: white;
+    display: none;
+    font-size: 1vw;
+}
+
+.infoH2Left{
+    left: -18vw;
+}
+
+.infoH2Right{
+    left: 18vw;
+}
+
+.infoPLeft{
+    left: -18vw;
+}
+
+.infoPRight{
+    left: 18vw;
+}
+
+#info1{
+    top: 20vh;
+}
+
+#info2{
+    top: 60vh;
+}
+
+#info3{
+    top: 100vh;
+}
+
+#info4{
+    top: 140vh;
+}
+
+#info5{
+    top: 180vh;
+}
+
+#info6{
+    top: 220vh;
+}
+
+#info7{
+    top: 260vh;
+}
+
+#info1 p{
+    top: 40%;
+}

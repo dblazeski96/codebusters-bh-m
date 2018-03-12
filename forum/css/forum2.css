@@ -256,19 +256,19 @@ body {
 
 #reps {
 	position: absolute;
-	left: 50vw;
+	right: 4vw;
 	margin-right: 35px;
 }
 
 #views {
 	position: absolute;
-	left: 44vw;
+	right: 11vw;
 	margin-right: 45px;
 }
 
 #lmessage {
 	position: absolute;
-	left: 35vw;
+	right: 17vw;
 	margin-right: 45px;
 }
 
@@ -293,7 +293,7 @@ body {
 .titleContent {
 	position: absolute;
 	left: 4vw;
-	width: 610px;
+	width: 50vw;
 	height: 76px;
 	margin-top: 1.9vh;
 	margin-left: 22px;
@@ -301,7 +301,7 @@ body {
 }
 
 .titleContent > h5 {
-	font-size: 22px;
+	font-size: 20px;
 	color: white;
 	margin: 0px;
 	padding-bottom: 0px;
@@ -325,7 +325,7 @@ body {
 
 .RepliesContent {
 	position: absolute;
-	left: 33vw;
+	right: 18vw;
 	width: 70px;
 	height: 76px;
 	margin-top: 6px;
@@ -344,7 +344,7 @@ body {
 
 .ViewsContent {
 	position: absolute;
-	left: 42.5vw;
+	right: 9vw;
 	width: 70px;
 	height: 76px;
 	margin: 32px 1vw;
@@ -359,7 +359,7 @@ body {
 }
 
 .lastMessageContent {
-	right: 2vw;
+	right: 3vw;
 	width: 125px;
 	height: 76px;
 	margin: 26px 1vw;
